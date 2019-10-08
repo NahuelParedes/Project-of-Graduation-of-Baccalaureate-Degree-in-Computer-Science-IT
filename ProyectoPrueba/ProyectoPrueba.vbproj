@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{198D969C-A354-4129-8A04-ECB93447FD9D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ProyectoPrueba.My.MyApplication</StartupObject>
+    <RootNamespace>ProyectoPrueba</RootNamespace>
+    <AssemblyName>ProyectoPrueba</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProyectoPrueba.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ProyectoPrueba.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>ProyectoPrueba.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>ProyectoPrueba.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>if_currency_copysvg_1579794.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Historial.Designer.vb">
+      <DependentUpon>Historial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Historial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General.vb" />
+    <Compile Include="HomeAdministracion.Designer.vb">
+      <DependentUpon>HomeAdministracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAdministracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeAdministrador.Designer.vb">
+      <DependentUpon>HomeAdministrador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAdministrador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeInvitado.Designer.vb">
+      <DependentUpon>HomeInvitado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HomeInvitado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeProfesor.Designer.vb">
+      <DependentUpon>HomeProfesor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HomeProfesor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBD.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\ConexionBDI.vb" />
+    <Compile Include="My Project\Module1.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Historial.resx">
+      <DependentUpon>Historial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeAdministracion.resx">
+      <DependentUpon>HomeAdministracion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeAdministrador.resx">
+      <DependentUpon>HomeAdministrador.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeInvitado.resx">
+      <DependentUpon>HomeInvitado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeProfesor.resx">
+      <DependentUpon>HomeProfesor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escuela.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\90x90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70x70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70x701.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TWalsh__close1-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\93631.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\isologotipo-negro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoits.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slogo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono cerrar FN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADM 60X60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tec 60x60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prof 60x60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inv 60x60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Menu Princ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colaboracion 50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoNotas50X50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Baja 50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modificar 50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modificar 50x50 F.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agregar 50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actualizar 50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Atras 50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Volver Atras 50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50X50 VOLER ATRAS FINAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UTU 50X50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grupos 50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Materias 50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Editar 50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="if_currency_copysvg_1579794.ico" />
+    <None Include="Resources\IconHistorial50x50.png" />
+    <None Include="Resources\Conf50x50.png" />
+    <None Include="Resources\settings_icon-icons.com_49858.png" />
+    <None Include="Resources\1280x800.jpg" />
+    <None Include="Resources\fondoicon.png" />
+    <None Include="Resources\Fondo3NM.png" />
+    <None Include="Resources\LogoCeleste.png" />
+    <None Include="Resources\IconoHome.png" />
+    <None Include="Resources\NewIconMenu.png" />
+    <None Include="Resources\IconF.png" />
+    <None Include="Resources\InvitadoBlanco.png" />
+    <None Include="Resources\profesoresIcon.png" />
+    <None Include="Resources\AdministradorBlanco.png" />
+    <None Include="Resources\AdministradorIcon.png" />
+    <None Include="Resources\adm.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
